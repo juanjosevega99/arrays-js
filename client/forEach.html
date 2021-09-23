@@ -39,6 +39,21 @@
       //      </li>`;
       //   app.insertAdjacentHTML('beforeend', element);
       // });
+
+      tasks.forEach(({ title, done }) => {
+        const element = `
+         <li>
+          	 <input 
+                     type='checkbox' 
+                     id='${title}' 
+                     name='${title}' 
+                     ${done && 'checked'} />
+                  <label for='${title}' >${title} </label>   
+         </li>`;
+        nodes.append(element);
+
+        app.append(nodes);
+      });
     </script>
   </body>
 </html>
