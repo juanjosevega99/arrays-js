@@ -9,6 +9,7 @@
   "author": "Juan Jose Vega",
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^2.24.0",
     "http-server": "^13.0.2"
   }
 }
